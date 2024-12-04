@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuesioner Stres Kerja</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: rgb(131, 32, 32);
+            border: none;
+
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Kuesioner Stres Kerja</h1>
+        
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+        
+        <label for="usia">Usia:</label>
+        <input type="number" id="usia" name="usia" required>
+        
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin" required>
+            <option value="">Pilih</option>
+            <option value="laki-laki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+        </select>
+        
+        <label for="pendidikan">Tingkat pendidikan terakhir:</label>
+        <input type="text" id="pendidikan" name="pendidikan" required>
+        
+        <label for="jabatan">Jabatan:</label>
+        <input type="text" id="jabatan" name="jabatan" required>
+        
+        <label for="bidang_pekerjaan">Bidang pekerjaan:</label>
+        <input type="text" id="bidang_pekerjaan" name="bidang_pekerjaan" required>
+        
+        <label for="lama_bekerja">Lama bekerja:</label>
+        <input type="text" id="lama_bekerja" name="lama_bekerja" required>
+        
+        <h2>Pertanyaan:</h2>
+        
+        <div class="question">
+            <p>1. Apakah Anda pernah merasa terlalu banyak pekerjaan yang harus diselesaikan dalam waktu yang terbatas?</p>
+            <label><input type="radio" name="q1" value="sering" required> Sering</label>
+            <label><input type="radio" name="q1" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q1" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>2. Apakah Anda pernah merasa sulit untuk berkonsentrasi karena tekanan kerja?</p>
+            <label><input type="radio" name="q2" value="sering" required> Sering</label>
+            <label><input type="radio" name="q2" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q2" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>3. Apakah pernah merasa pekerjaan Anda terlalu menuntut secara emosional?</p>
+            <label><input type="radio" name="q3" value="sering" required> Sering</label>
+            <label><input type="radio" name="q3" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q3" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>4. Apakah Anda pernah mengalami kesulitan tidur karena memikirkan pekerjaan?</p>
+            <label><input type="radio" name="q4" value="sering" required> Sering</label>
+            <label><input type="radio" name="q4" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q4" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>5. Apakah Anda pernah merasa tidak punya cukup waktu untuk keluarga atau kehidupan pribadi Anda karena kerja?</p>
+            <label><input type="radio" name="q5" value="sering" required> Sering</label>
+            <label><input type="radio" name="q5" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q5" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>6. Apakah Anda pernah merasa kurang dihargai atas usaha dan kontribusi di tempat kerja?</p>
+            <label><input type="radio" name="q6" value="sering" required> Sering</label>
+            <label><input type="radio" name="q6" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q6" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>7. Apakah Anda pernah merasa frustrasi karena komunikasi yang buruk di tempat kerja?</p>
+            <label><input type="radio" name="q7" value="sering" required> Sering</label>
+            <label><input type="radio" name="q7" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q7" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>8. Apakah Anda pernah merasa lelah atau kehabisan energi setelah bekerja?</p>
+            <label><input type="radio" name="q8" value="sering" required> Sering</label>
+            <label><input type="radio" name="q8" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q8" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>9. Apakah pernah merasa kewalahan dengan tanggung jawab yang diberikan kepada Anda?</p>
+            <label><input type="radio" name="q9" value="sering" required> Sering</label>
+            <label><input type="radio" name="q9" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q9" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>10. Apakah Anda pernah merasa sulit menjaga keseimbangan antara kehidupan kerja dan pribadi?</p>
+            <label><input type="radio" name="q10" value="sering" required> Sering</label>
+            <label><input type="radio" name="q10" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q10" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>11. Apakah pernah merasa rekan kerja atau atasan Anda kurang mendukung?</p>
+            <label><input type="radio" name="q11" value="sering" required> Sering</label>
+            <label><input type="radio" name="q11" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q11" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>12. Apakah Anda pernah merasa cemas memikirkan pekerjaan bahkan di luar jam kerja?</p>
+            <label><input type="radio" name="q12" value="sering" required> Sering</label>
+            <label><input type="radio" name="q12" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q12" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>13. Apakah Anda pernah merasa tekanan kerja memengaruhi kesehatan fisik Anda (seperti sakit kepala atau kelelahan)?</p>
+            <label><input type="radio" name="q13" value="sering" required> Sering</label>
+            <label><input type="radio" name="q13" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q13" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>14. Apakah pernah merasa lingkungan kerja Anda tidak nyaman atau tidak kondusif?</p>
+            <label><input type="radio" name="q14" value="sering" required> Sering</label>
+            <label><input type="radio" name="q14" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q14" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <div class="question">
+            <p>15. Apakah Anda pernah merasa stres menghadapi perubahan yang tiba-tiba di tempat kerja?</p>
+            <label><input type="radio" name="q15" value="sering" required> Sering</label>
+            <label><input type="radio" name="q15" value="kadang-kadang"> Kadang-kadang</label>
+            <label><input type="radio" name="q15" value="tidak_pernah"> Tidak Pernah</label>
+        </div>
+
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
